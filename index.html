@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./settopBox.css"/>
+    <script type="text/javascript" src="./data.js"></script>
+    <script type="text/javascript" src="./settopBox.js"></script>
+    <script type="text/javascript">
+      function pageLoad() {
+        var settopbox = new SettopBox();
+        settopbox.render('nf');
+
+        window.onkeypress = function(evt) {
+          settopbox.handleKeyPress(evt);
+        };
+      }
+    </script>
+  </head>
+
+  <body id="mybod" onload="pageLoad();">
+    <div id="nf"/> 
+  </body>
+</html>
